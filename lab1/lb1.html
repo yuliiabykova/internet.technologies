@@ -72,36 +72,56 @@
 <h4>Завдання 4. Форма для вводу інформації про комплектуючі ПК:</h4>
 <form>
   <div>Процесор:</div>
-  <input>
-  <div>Материнська плата:</div>
-  <input>
+  <label>
+    <input>
+  </label>
   <div>Охолодження:</div>
-  <input>
+  <label>
+    <input>
+  </label>
   <div>Жорсткі диски:</div>
-  <input>
+  <label>
+    <input>
+  </label>
   <div>SSD накопичувачі:</div>
-  <input>
+  <label>
+    <input>
+  </label>
   <div>Відеокарти :</div>
-  <input>
+  <label>
+    <input>
+  </label>
   <div>Оптичний привід:</div>
-  <input>
+  <label>
+    <input>
+  </label>
   <div>Корпус:</div>
-  <input>
+  <label>
+    <input>
+  </label>
   <div>Блоки живлення:</div>
-  <input>
+  <label>
+    <input>
+  </label>
   <div><button>Підтвердити</button></div>
 </form>
 
 <h4>Завдання 5. Зображення, при натисканні на яке відбувається перехід на сайт університету, сайт кафедри або розклад - в залежності від місця кліка:</h4>
 
-<a href="https://cist.nure.ua">
-  <img src="cist.png" width="182" alt="Розклад"/>
-</a>
-<a href="https://dec.nure.ua">
-  <img src="eom.png" width="100" alt="Кафедра ЕОМ"/>
-</a>
-<a href="https://nure.ua">
-  <img src="nure.png" width="100" alt="Розклад"/>
-</a>
+<img usemap="#multilinks" src="nure.png" width="200" height="200" alt="Декілька зображень">
+<map name="multilinks">
+  <area shape="rect"
+        coords="0,0,100,100"
+        alt="Розклад"
+        href="https://cist.nure.ua">
+  <area shape="rect"
+        coords="100,0,200,100"
+        alt="Кафедра ЕОМ"
+        href="https://dec.nure.ua">
+  <area shape="rect"
+        coords="100,100,200,200"
+        alt="ХНУРЕ"
+        href="https://nure.ua">
+</map>
 </body>
 </html>
