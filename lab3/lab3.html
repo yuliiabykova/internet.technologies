@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №3</title>
+    <style>
+        .odd {
+            background-color: #8400ff;
+        }
+        .even {
+            background-color: #0080ff;
+        }
+    </style>
+    <script>
+        var count = 1;
+        var time = parseInt(window.prompt("Будь ласка введіть інтервал з яким генерувати данні таблиці (в секундах)", ""), 5) || 1;
+
+        setInterval(() => {
+            // Знаходимо потрібну таблицю
+            var tbody = document.getElementById('main').getElementsByTagName('tbody')[0];
+            // Створюємо строку таблиці і додаємо її
+            var row = tbody.insertRow(0);
+            var td1 = row.insertCell(0);
+            var td2 = row.insertCell(1);
+            // Додаємо клас в залежності від номера
+            row.className = count % 2 === 0 ? 'even' : 'odd';
+            td1.innerHTML = (count++).toString();
+            td2.innerHTML = Math.random().toString();
+        }, time * 1000)
+
+    </script>
+</head>
+<body>
+    <div id="main">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Номер
+                    </th>
+                    <th>
+                        Випадкове число
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

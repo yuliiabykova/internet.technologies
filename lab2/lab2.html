@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №2</title>
+    <link href="lab2.css" type="text/css" rel="stylesheet">
+    <style>
+        #container {
+            background-color: #8400ff
+        }
+        .show {
+            text-align: center;
+            font-size: 35px;
+        }
+        #small {
+            font-size: 20px;
+        }
+        .absolute-pos {
+            position: absolute;
+            right: 40%;
+        }
+        .relative-pos {
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+        .floating-model {
+            float: right;
+        }
+        .hidden-block {
+            cursor: pointer;
+            position: fixed;
+            top: 40%;
+            left: 0;
+        }
+        .hidden-block .inner {
+            max-width: 0;
+            overflow: hidden;
+            transition: max-width 0.5s;
+            display: inline-block;
+            white-space: nowrap;
+            background-color: antiquewhite;
+        }
+        .hidden-block:hover .inner {
+            max-width: 300px;
+        }
+        .contacts {
+            background-color: yellow;
+        }
+        img {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: #ee00ff">
+        inline-опис style
+    </div>
+    <div id="container">
+        за допомогою контейнера style в секції заголовка
+    </div>
+    <div id="outer-style">
+        за допомогою стильової таблиці, розташованої в зовнішньому файлі
+    </div>
+    <div>Малий текст</div>
+    <div class="show">Великий текст за допомогою класу</div>
+    <div id="small">Звичайний текст за допомогою id</div>
+    <div class="absolute-pos">
+        Абсолютне позиціювання
+    </div>
+    <div class="relative-pos">
+        Відносне позиціювання
+    </div>
+    <div class="floating-model">
+        Плаваюча модель
+    </div>
+
+    <br/>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+    <div class="show">Текст для збільшення сторінки</div>
+
+    <div class="hidden-block">
+        <div class="inner">
+            <a href="https://nure.ua">
+                <img src="nure.png" alt="ХНУРЭ">
+                Сайт ХНУРЭ
+            </a>
+        </div>
+        <div class="contacts">
+            ★
+        </div>
+    </div>
+</body>
+</html>
