@@ -13,20 +13,37 @@
 Скриншоты:
 
 - составленная база данных
+
 ![](screenshots/created_bd.png)
+
 - данные заполненной таблицы "фильмы"
+
 ![](screenshots/films_data.png)
+
 - начальная страница приложения
+
 ![](screenshots/start_page.png)
+
 - выбор фильма по актеру
+
 ![](screenshots/film_by_actor.png)
+
 - результат выбора фыльма по актеру
+
 ![](screenshots/film_by_cator_result.png)
+
 - выбор фильма по жанру
+
 ![](screenshots/film_by_genre.png)
+
 - результат выбора фыльма по жанру
+
 ![](screenshots/film_by_genre_result.png)
+
 - выбор фильма по времени
+
 ![](screenshots/film_by_tim_interval_result.png)
+
 - результат выбора фыльма по времени
+
 ![](screenshots/film_by_time_interval.png)
