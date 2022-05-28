@@ -12,7 +12,7 @@
 
     try {
     $dbh = new PDO ($dsn, $username, $password);
-    echo "Фільми за актором:<br><br>";
+    echo "Фільми за жанром:<br><br>";
     $genre_id = $_POST['genreId'];
     $select_films_by_actor = "SELECT * FROM `film_genre` WHERE FID_Genre = $genre_id;";
     $films_by_genre = $dbh->query($select_films_by_actor);
