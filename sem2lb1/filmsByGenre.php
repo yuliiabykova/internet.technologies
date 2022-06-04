@@ -14,8 +14,10 @@
     $dbh = new PDO ($dsn, $username, $password);
     echo "Фільми за жанром:<br><br>";
     $genre_id = $_POST['genreId'];
-    $select_films_by_actor = "SELECT * FROM `film_genre` WHERE FID_Genre = $genre_id;";
-    $films_by_genre = $dbh->query($select_films_by_actor);
+    $select_films_by_actor =  'SELECT * FROM `film_genre` WHERE FID_Genre = :genre_id;';
+    $sth = $dbh->prepare($select_films_by_actor, array (PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+    $sth->execute(array(':genre_id' => $genre_id));
+    $films_by_genre = $sth->fetchAll();
     $film_ids = [];
     foreach ($films_by_genre as $row) {
         array_push($film_ids, $row[0]);
